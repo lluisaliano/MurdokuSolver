@@ -7,9 +7,9 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(murdoku src/main.cpp)
+add_executable(main src/main.cpp src/Board.cpp)
 
-target_compile_options(murdoku PRIVATE
+target_compile_options(main PRIVATE
 -Wall -Wextra -Wpedantic -Wsign-conversion)
 
-target_include_directories(murdoku PUBLIC include)
+target_include_directories(main PUBLIC include)
